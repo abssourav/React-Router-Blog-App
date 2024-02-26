@@ -1,0 +1,17 @@
+.div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    
+}
+.div2{
+    background-color: #1f1c1c;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.p{
+    max-width: 200px;
+}
