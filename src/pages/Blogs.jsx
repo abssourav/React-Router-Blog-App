@@ -26,7 +26,7 @@ const Blogs = () => {
                     return <div key={id} className='div2'>
                         <h3>{title}</h3>
                         <p className='p'>{truncateString(body,150)}</p>
-                        <Link to={title}>Learn More</Link>
+                        <Link to={title} state={{body,id}}>Learn More</Link>
                     </div>
                 })}
             </div>
