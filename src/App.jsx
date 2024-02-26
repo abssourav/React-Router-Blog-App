@@ -1,5 +1,9 @@
+import {Helmet} from "react-helmet";
+import { useState } from 'react'
+import ProtectedRoute from './routes/ProtectedRoute'
 import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom'
 
+//pages
 import './App.css'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
@@ -8,8 +12,7 @@ import Error from './pages/Error'
 import Blogs from './pages/Blogs'
 import Blog from './pages/Blog'
 import User from './pages/User'
-import { useState } from 'react'
-import ProtectedRoute from './routes/ProtectedRoute'
+
 
 function App() {
 
@@ -21,6 +24,9 @@ function App() {
 
   return (
     <BrowserRouter>
+    <Helmet>
+      <title>Home</title>
+    </Helmet>
       <div style={{ display: 'flex', justifyContent:'space-between' }}>
 
         <nav>
